@@ -1,0 +1,20 @@
+a = float(input(&quot;Введите длину кирпича (a): &quot;)) b =
+float(input(&quot;Введите ширину кирпича (b): &quot;)) c =
+float(input(&quot;Введите высоту кирпича (c): &quot;)) x =
+float(input(&quot;Введите ширину отверстия (x): &quot;)) y
+= float(input(&quot;Введите высоту отверстия (y): &quot;))
+# Проверка параллельного расположения
+if a &lt;= x and b &lt;= y or a &lt;= y and b &lt;= x:
+print(&quot;Кирпич пройдет в отверстие при параллельном расположении.&quot;)
+elif a &lt;= x and c &lt;= y or a &lt;= y and c &lt;= x:
+print(&quot;Кирпич пройдет в отверстие при параллельном расположении.&quot;)
+elif b &lt;= x and c &lt;= y or b &lt;= y and c &lt;= x:
+print(&quot;Кирпич пройдет в отверстие при параллельном расположении.&quot;)
+else:
+print(&quot;Кирпич не пройдет в отверстие при параллельном расположении.&quot;)
+# Проверка перпендикулярного расположения
+if a &lt;= x or a &lt;= y or b &lt;= x or b &lt;= y or c &lt;= x or c &lt;= y:
+print(&quot;Кирпич пройдет в отверстие при
+перпендикулярном расположении.&quot;) else:
+print(&quot;Кирпич не пройдет в отверстие при перпендикулярном
+расположении.&quot;)
